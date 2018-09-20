@@ -201,16 +201,6 @@
         </li>
       
         
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
@@ -237,16 +227,6 @@
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-commonweal">
-          <a href="/404/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
-            
-            公益404
           </a>
         </li>
       
@@ -278,7 +258,7 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-categories" itemscope itemtype="http://schema.org/Article">
   
   
   
@@ -365,8 +345,28 @@
       
         
           
-            <p>Welcome to personal blog.</p>
-<h2 id="近水楼台先得月-向阳花木易为春"><a href="#近水楼台先得月-向阳花木易为春" class="headerlink" title="近水楼台先得月, 向阳花木易为春"></a>近水楼台先得月, 向阳花木易为春</h2>
+            <h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p>看过很多人，用<code>github</code>创建个人博客，最近抽空也实现的自己的博客，下面就把摸索过程记录下。</p>
+<h2 id="二、准备"><a href="#二、准备" class="headerlink" title="二、准备"></a>二、准备</h2><h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>Node.js下载地址：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a></p>
+<p>安装过程一路默认安装即可。</p>
+<p>详细安装文档参看：<a href="http://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="noopener">http://www.runoob.com/nodejs/nodejs-install-setup.html</a></p>
+<h3 id="安装Git软件"><a href="#安装Git软件" class="headerlink" title="安装Git软件"></a>安装Git软件</h3><p>Git软件下载地址：<a href="https://git-scm.com/download" target="_blank" rel="noopener">https://git-scm.com/download</a></p>
+<p>安装过程一路默认安装即可。</p>
+<p>关于更多的Git讲解参看：</p>
+<p><a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000</a></p>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>什么是 Hexo？Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用<code>Markdown</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<p>Hexo官方网站：<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">https://hexo.io/zh-cn/</a> ，我用的当前版本是v6.4.0，基本步骤：</p>
+<ol>
+<li><p>新建一个blog空文件夹，cmd窗口或vscode终端，输入命令<code>npm install -g hexo-cli</code>全局安装hexo；</p>
+</li>
+<li><p>安装完成后输入<code>hexo -v</code>显示hexo的相关信息说明安装成功；</p>
+</li>
+<li><p>输入命令<code>hexo init</code>初始化hexo项目，安装相关依赖，安装完成后的目录结构：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">- node_modules // 依赖包</span><br><span class="line">- public // 存放生成的页面</span><br><span class="line">- scaffolds // 生成页模板</span><br><span class="line">- source // 创建的源文章</span><br><span class="line">- themes // 主题</span><br><span class="line">- _config.yml // 博客配置（站点配置）</span><br><span class="line">- db.json // 解析source得到的库文件</span><br><span class="line">- package.json // 项目依赖配置</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>上一步安装完成，输入命令<code>hexo s</code>或<code>hexo server</code>，开启服务，成功后，在浏览器访问<code>http://localhost:4000</code>生成的默认主题博客。PS：在这里可以<code>npm install hexo-browsersync --save</code>实现热更新，不必每次更改都去刷新浏览器。</p>
+</li>
+</ol>
+
           
         
       
